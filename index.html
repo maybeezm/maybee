@@ -47,7 +47,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/img/headImage.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">MayBee</a></h1>
@@ -107,7 +107,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/img/headImage.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">MayBee</h1>
@@ -180,101 +180,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="主题：组件的生命周期"><a href="#主题：组件的生命周期" class="headerlink" title="主题：组件的生命周期"></a>主题：组件的生命周期</h1><h2 id="RN组件的props和state"><a href="#RN组件的props和state" class="headerlink" title="RN组件的props和state"></a>RN组件的props和state</h2><h3 id="1-属性（props）"><a href="#1-属性（props）" class="headerlink" title="1.属性（props）"></a>1.属性（props）</h3><h6 id="它是组件的不可变属性（组件自己不可以自己修改props）。"><a href="#它是组件的不可变属性（组件自己不可以自己修改props）。" class="headerlink" title="它是组件的不可变属性（组件自己不可以自己修改props）。"></a>它是组件的不可变属性（组件自己不可以自己修改props）。</h6><h6 id="组件自身定义了一组props作为对外提供的接口，展示一个组件时只需要指定props作为节点的属性。"><a href="#组件自身定义了一组props作为对外提供的接口，展示一个组件时只需要指定props作为节点的属性。" class="headerlink" title="组件自身定义了一组props作为对外提供的接口，展示一个组件时只需要指定props作为节点的属性。"></a>组件自身定义了一组props作为对外提供的接口，展示一个组件时只需要指定props作为节点的属性。</h6><h6 id="一般组件很少需要对外公开方法（例外：工具类的静态方法等），唯一的交互途径就是props。所以说它也是父组件与子组件通信的桥梁。"><a href="#一般组件很少需要对外公开方法（例外：工具类的静态方法等），唯一的交互途径就是props。所以说它也是父组件与子组件通信的桥梁。" class="headerlink" title="一般组件很少需要对外公开方法（例外：工具类的静态方法等），唯一的交互途径就是props。所以说它也是父组件与子组件通信的桥梁。"></a>一般组件很少需要对外公开方法（例外：工具类的静态方法等），唯一的交互途径就是props。所以说它也是父组件与子组件通信的桥梁。</h6><h6 id="组件自己不可以自己修改props（即：props可认为是只读的），只可由其他组件调用它时在外部修改。"><a href="#组件自己不可以自己修改props（即：props可认为是只读的），只可由其他组件调用它时在外部修改。" class="headerlink" title="组件自己不可以自己修改props（即：props可认为是只读的），只可由其他组件调用它时在外部修改。"></a>组件自己不可以自己修改props（即：props可认为是只读的），只可由其他组件调用它时在外部修改。</h6><h3 id="2-状态（state）"><a href="#2-状态（state）" class="headerlink" title="2.状态（state）"></a>2.状态（state）</h3><h6 id="它是组件的内部状态属性，主要用来存储组件自身需要的数据。"><a href="#它是组件的内部状态属性，主要用来存储组件自身需要的数据。" class="headerlink" title="它是组件的内部状态属性，主要用来存储组件自身需要的数据。"></a>它是组件的内部状态属性，主要用来存储组件自身需要的数据。</h6><h6 id="除了初始化时可能由props来决定，之后就完全由组件自身去维护。"><a href="#除了初始化时可能由props来决定，之后就完全由组件自身去维护。" class="headerlink" title="除了初始化时可能由props来决定，之后就完全由组件自身去维护。"></a>除了初始化时可能由props来决定，之后就完全由组件自身去维护。</h6><h6 id="组件中由系统定义了setState方法，每次调用setState时都会更新组件的状态，触发render方法重新渲染界面。"><a href="#组件中由系统定义了setState方法，每次调用setState时都会更新组件的状态，触发render方法重新渲染界面。" class="headerlink" title="组件中由系统定义了setState方法，每次调用setState时都会更新组件的状态，触发render方法重新渲染界面。"></a>组件中由系统定义了setState方法，每次调用setState时都会更新组件的状态，触发render方法重新渲染界面。</h6><h6 id="需要注意的是render方法是被异步调用的，这可以保证同步的多个setState方法只会触发一次render，这样做是有利于提高性能的。"><a href="#需要注意的是render方法是被异步调用的，这可以保证同步的多个setState方法只会触发一次render，这样做是有利于提高性能的。" class="headerlink" title="需要注意的是render方法是被异步调用的，这可以保证同步的多个setState方法只会触发一次render，这样做是有利于提高性能的。"></a>需要注意的是render方法是被异步调用的，这可以保证同步的多个setState方法只会触发一次render，这样做是有利于提高性能的。</h6><p>‘more’</p>
-<h2 id="RN生命周期"><a href="#RN生命周期" class="headerlink" title="RN生命周期"></a>RN生命周期</h2><p><img src="https://upload-images.jianshu.io/upload_images/2428275-f08403a3ea1b80f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" alt="image"></p>
-<h5 id="可以把组件生命周期大致分为四个阶段："><a href="#可以把组件生命周期大致分为四个阶段：" class="headerlink" title="可以把组件生命周期大致分为四个阶段："></a>可以把组件生命周期大致分为四个阶段：</h5><ul>
-<li>第一阶段：创建初始化组件的属性类型和默认属性；</li>
-<li>第二阶段：组件类被调用(实例化)</li>
-<li>第三阶段：是组件在运行和交互阶段，如图中左下角虚线框，这个阶段组件可以处理用户交互，或者接收事件更新界面；</li>
-<li>第四阶段：是组件卸载消亡的阶段，如图中右下角的虚线框中，这里做一些组件的清理工作</li>
-</ul>
-<hr>
-<h3 id="1-创建阶段"><a href="#1-创建阶段" class="headerlink" title="1.创建阶段"></a>1.创建阶段</h3><h5 id="该阶段主要发生在创建组件类的时候，主要作用是创建初始化组件的属性类型和默认属性。"><a href="#该阶段主要发生在创建组件类的时候，主要作用是创建初始化组件的属性类型和默认属性。" class="headerlink" title="该阶段主要发生在创建组件类的时候，主要作用是创建初始化组件的属性类型和默认属性。"></a>该阶段主要发生在创建组件类的时候，主要作用是创建初始化组件的属性类型和默认属性。</h5><h4 id="defaultProps-getDefaultProps"><a href="#defaultProps-getDefaultProps" class="headerlink" title="defaultProps / getDefaultProps()"></a>defaultProps / getDefaultProps()</h4><h5 id="这里用来初始化默认属性，一个控件通过this-props获取需要的属性。因为组件初始化后不会再次调用本方法，所以组件自己不能更改自身的props（所以一般默认props为只读）"><a href="#这里用来初始化默认属性，一个控件通过this-props获取需要的属性。因为组件初始化后不会再次调用本方法，所以组件自己不能更改自身的props（所以一般默认props为只读）" class="headerlink" title="这里用来初始化默认属性，一个控件通过this.props获取需要的属性。因为组件初始化后不会再次调用本方法，所以组件自己不能更改自身的props（所以一般默认props为只读）"></a>这里用来初始化默认属性，一个控件通过this.props获取需要的属性。因为组件初始化后不会再次调用本方法，所以组件自己不能更改自身的props（所以一般默认props为只读）</h5><h5 id="ES5中属性类型和默认属性分别通过propTypes和getDefaultProps方法实现"><a href="#ES5中属性类型和默认属性分别通过propTypes和getDefaultProps方法实现" class="headerlink" title="ES5中属性类型和默认属性分别通过propTypes和getDefaultProps方法实现"></a>ES5中属性类型和默认属性分别通过propTypes和getDefaultProps方法实现</h5><figure class="highlight roboconf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//ES5 </span><br><span class="line">getDefaultProps: function() &#123;</span><br><span class="line"><span class="attribute">return &#123; autoPlay</span>: false, maxLoops: 10, &#125;;</span><br><span class="line">&#125;, </span><br><span class="line">propTypes: &#123;</span><br><span class="line"><span class="attribute">autoPlay</span>: React<span class="variable">.PropTypes</span><span class="variable">.bool</span><span class="variable">.isRequired</span>, </span><br><span class="line">maxLoops: React<span class="variable">.PropTypes</span><span class="variable">.number</span><span class="variable">.isRequired</span>, </span><br><span class="line">posterFrameSrc: React<span class="variable">.PropTypes</span><span class="variable">.string</span><span class="variable">.isRequired</span>, </span><br><span class="line">videoSrc: React<span class="variable">.PropTypes</span><span class="variable">.string</span><span class="variable">.isRequired</span>, </span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-<h5 id="在ES6里，可以统一使用static成员来实现"><a href="#在ES6里，可以统一使用static成员来实现" class="headerlink" title="在ES6里，可以统一使用static成员来实现."></a>在ES6里，可以统一使用static成员来实现.</h5><figure class="highlight roboconf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">//ES6 </span><br><span class="line">static defaultProps = &#123;</span><br><span class="line"><span class="attribute">autoPlay</span>: false, </span><br><span class="line">maxLoops: 10, </span><br><span class="line">&#125;; // 注意这里有分号 </span><br><span class="line"><span class="attribute">static propTypes = &#123;</span></span><br><span class="line"><span class="attribute">autoPlay</span>: React<span class="variable">.PropTypes</span><span class="variable">.bool</span><span class="variable">.isRequired</span>,</span><br><span class="line">maxLoops: React<span class="variable">.PropTypes</span><span class="variable">.number</span><span class="variable">.isRequired</span>,</span><br><span class="line">posterFrameSrc: React<span class="variable">.PropTypes</span><span class="variable">.string</span><span class="variable">.isRequired</span>,</span><br><span class="line">videoSrc: React<span class="variable">.PropTypes</span><span class="variable">.string</span><span class="variable">.isRequired</span>, </span><br><span class="line">&#125;; // 注意这里有分号</span><br><span class="line"></span><br><span class="line">替换方法</span><br><span class="line"><span class="attribute">npm install --save prop-types</span></span><br><span class="line"><span class="attribute">import PropTypes from 'prop-types';</span></span><br><span class="line"><span class="attribute">属性</span>: PropTypes<span class="variable">.array</span>,</span><br><span class="line">属性: PropTypes<span class="variable">.bool</span>,</span><br><span class="line">属性: PropTypes<span class="variable">.func</span>,</span><br><span class="line">属性: PropTypes<span class="variable">.number</span>,</span><br><span class="line">属性: PropTypes<span class="variable">.object</span>,</span><br><span class="line">属性: PropTypes<span class="variable">.string</span>,</span><br></pre></td></tr></table></figure>
-<h3 id="2-实例化阶段"><a href="#2-实例化阶段" class="headerlink" title="2.实例化阶段"></a>2.实例化阶段</h3><h5 id="该阶段主要发生在组件类被调用-实例化-的时候。"><a href="#该阶段主要发生在组件类被调用-实例化-的时候。" class="headerlink" title="该阶段主要发生在组件类被调用(实例化)的时候。"></a>该阶段主要发生在组件类被调用(实例化)的时候。</h5><h4 id="1-constructor-props-getInitialState"><a href="#1-constructor-props-getInitialState" class="headerlink" title="1) constructor(props) / getInitialState()"></a>1) constructor(props) / getInitialState()</h4><h5 id="这里是对控件的一些状态进行初始化，由于该函数不同于getDefaultProps，在以后的过程中，会再次调用，所以可以将控制控件的状态的一些变量放在这里初始化，如控件上显示的文字，可以通过this-state来获取值，通过this-setState来修改state值。"><a href="#这里是对控件的一些状态进行初始化，由于该函数不同于getDefaultProps，在以后的过程中，会再次调用，所以可以将控制控件的状态的一些变量放在这里初始化，如控件上显示的文字，可以通过this-state来获取值，通过this-setState来修改state值。" class="headerlink" title="这里是对控件的一些状态进行初始化，由于该函数不同于getDefaultProps，在以后的过程中，会再次调用，所以可以将控制控件的状态的一些变量放在这里初始化，如控件上显示的文字，可以通过this.state来获取值，通过this.setState来修改state值。"></a>这里是对控件的一些状态进行初始化，由于该函数不同于getDefaultProps，在以后的过程中，会再次调用，所以可以将控制控件的状态的一些变量放在这里初始化，如控件上显示的文字，可以通过this.state来获取值，通过this.setState来修改state值。</h5><h5 id="在ES5里，通过getInitialState对状态进行初始化"><a href="#在ES5里，通过getInitialState对状态进行初始化" class="headerlink" title="在ES5里，通过getInitialState对状态进行初始化"></a>在ES5里，通过getInitialState对状态进行初始化</h5><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//ES5</span></span><br><span class="line">getInitialState: <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="keyword">return</span> &#123;</span><br><span class="line">loopsRemaining: <span class="keyword">this</span>.props.maxLoops,</span><br><span class="line">&#125;;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-<h5 id="在ES6里，通过constructor-构造器-对状态进行初始化"><a href="#在ES6里，通过constructor-构造器-对状态进行初始化" class="headerlink" title="在ES6里，通过constructor(构造器)对状态进行初始化"></a>在ES6里，通过constructor(构造器)对状态进行初始化</h5><figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//ES6</span></span><br><span class="line"><span class="function"><span class="keyword">constructor</span><span class="params">(props)</span><span class="comment">&#123;</span></span></span><br><span class="line"><span class="function"><span class="comment">super(props);</span></span></span><br><span class="line"><span class="function"><span class="comment">this.state = &#123;</span></span></span><br><span class="line"><span class="function"><span class="comment">loopsRemaining: this.props.maxLoops,</span></span></span><br><span class="line"><span class="function"><span class="comment">&#125;</span>;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="2-componentWillMount"><a href="#2-componentWillMount" class="headerlink" title="2)componentWillMount()"></a>2)componentWillMount()</h4><h5 id="准备加载组件。"><a href="#准备加载组件。" class="headerlink" title="准备加载组件。"></a>准备加载组件。</h5><h5 id="这个调用时机是在组件创建，并初始化了状态之后，在第一次绘制-render-之前。可以在这里做一些业务初始化操作，也可以设置组件状态。这个函数在整个生命周期中只被调用一次。"><a href="#这个调用时机是在组件创建，并初始化了状态之后，在第一次绘制-render-之前。可以在这里做一些业务初始化操作，也可以设置组件状态。这个函数在整个生命周期中只被调用一次。" class="headerlink" title="这个调用时机是在组件创建，并初始化了状态之后，在第一次绘制 render() 之前。可以在这里做一些业务初始化操作，也可以设置组件状态。这个函数在整个生命周期中只被调用一次。"></a>这个调用时机是在组件创建，并初始化了状态之后，在第一次绘制 render() 之前。可以在这里做一些业务初始化操作，也可以设置组件状态。这个函数在整个生命周期中只被调用一次。</h5><h5 id="如果在这个函数里面调用setState，本次的render函数可以看到更新后的state，并且只渲染一次。"><a href="#如果在这个函数里面调用setState，本次的render函数可以看到更新后的state，并且只渲染一次。" class="headerlink" title="如果在这个函数里面调用setState，本次的render函数可以看到更新后的state，并且只渲染一次。"></a>如果在这个函数里面调用setState，本次的render函数可以看到更新后的state，并且只渲染一次。</h5><h4 id="3-render"><a href="#3-render" class="headerlink" title="3) render()"></a>3) render()</h4><h5 id="render是一个组件必须有的方法，形式为一个函数，渲染界面，并返回JSX或其他组件来构成DOM，和Android的XML布局、WPF的XAML布局类似，只能返回一个顶级元素。"><a href="#render是一个组件必须有的方法，形式为一个函数，渲染界面，并返回JSX或其他组件来构成DOM，和Android的XML布局、WPF的XAML布局类似，只能返回一个顶级元素。" class="headerlink" title="render是一个组件必须有的方法，形式为一个函数，渲染界面，并返回JSX或其他组件来构成DOM，和Android的XML布局、WPF的XAML布局类似，只能返回一个顶级元素。"></a>render是一个组件必须有的方法，形式为一个函数，渲染界面，并返回JSX或其他组件来构成DOM，和Android的XML布局、WPF的XAML布局类似，只能返回一个顶级元素。</h5><h4 id="4-componentDidUpdate"><a href="#4-componentDidUpdate" class="headerlink" title="4) componentDidUpdate()"></a>4) componentDidUpdate()</h4><h5 id="调用了render方法后，组件加载成功并被成功渲染出来以后所执行的hook函数，一般会将网络请求等加载数据的操作，放在这个函数里进行，来保证不会出现UI上的错误。"><a href="#调用了render方法后，组件加载成功并被成功渲染出来以后所执行的hook函数，一般会将网络请求等加载数据的操作，放在这个函数里进行，来保证不会出现UI上的错误。" class="headerlink" title="调用了render方法后，组件加载成功并被成功渲染出来以后所执行的hook函数，一般会将网络请求等加载数据的操作，放在这个函数里进行，来保证不会出现UI上的错误。"></a>调用了render方法后，组件加载成功并被成功渲染出来以后所执行的hook函数，一般会将网络请求等加载数据的操作，放在这个函数里进行，来保证不会出现UI上的错误。</h5><h3 id="3-运行-更新-阶段"><a href="#3-运行-更新-阶段" class="headerlink" title="3. 运行(更新)阶段"></a>3. 运行(更新)阶段</h3><h5 id="该阶段主要发生在用户操作之后，或者父组件有更新的时候，此时会根据用户的操作行为，进行相应的界面结构调整。"><a href="#该阶段主要发生在用户操作之后，或者父组件有更新的时候，此时会根据用户的操作行为，进行相应的界面结构调整。" class="headerlink" title="该阶段主要发生在用户操作之后，或者父组件有更新的时候，此时会根据用户的操作行为，进行相应的界面结构调整。"></a>该阶段主要发生在用户操作之后，或者父组件有更新的时候，此时会根据用户的操作行为，进行相应的界面结构调整。</h5><h5 id="触发的流程如下："><a href="#触发的流程如下：" class="headerlink" title="触发的流程如下："></a>触发的流程如下：</h5><h4 id="1-componentWillReceiveProps-nextProps"><a href="#1-componentWillReceiveProps-nextProps" class="headerlink" title="1) componentWillReceiveProps(nextProps)"></a>1) componentWillReceiveProps(nextProps)</h4><h5 id="当组件接收到新的props时，会触发该函数。在该函数中，通常可以调用setState-来完成对state的修改。"><a href="#当组件接收到新的props时，会触发该函数。在该函数中，通常可以调用setState-来完成对state的修改。" class="headerlink" title="当组件接收到新的props时，会触发该函数。在该函数中，通常可以调用setState()来完成对state的修改。"></a>当组件接收到新的props时，会触发该函数。在该函数中，通常可以调用setState()来完成对state的修改。</h5><h5 id="输入参数-nextProps-是即将被设置的属性，旧的属性还是可以通过-this-props-来获取。在这个回调函数里面，你可以根据属性的变化，通过调用-this-setState-来更新你的组件状态，这里调用更新状态是安全的，并不会触发额外的-render-调用。如下："><a href="#输入参数-nextProps-是即将被设置的属性，旧的属性还是可以通过-this-props-来获取。在这个回调函数里面，你可以根据属性的变化，通过调用-this-setState-来更新你的组件状态，这里调用更新状态是安全的，并不会触发额外的-render-调用。如下：" class="headerlink" title="输入参数 nextProps 是即将被设置的属性，旧的属性还是可以通过 this.props 来获取。在这个回调函数里面，你可以根据属性的变化，通过调用 this.setState() 来更新你的组件状态，这里调用更新状态是安全的，并不会触发额外的 render() 调用。如下："></a>输入参数 nextProps 是即将被设置的属性，旧的属性还是可以通过 this.props 来获取。在这个回调函数里面，你可以根据属性的变化，通过调用 this.setState() 来更新你的组件状态，这里调用更新状态是安全的，并不会触发额外的 render() 调用。如下：</h5><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">componentWillReceiveProps: <span class="function"><span class="keyword">function</span><span class="params">(nextProps)</span> </span>&#123;  </span><br><span class="line"><span class="keyword">this</span>.setState(&#123;</span><br><span class="line">likesIncreasing: nextProps.likeCount &gt; <span class="keyword">this</span>.props.likeCount</span><br><span class="line">&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="2-shouldComponentUpdate-nextProps-nextState"><a href="#2-shouldComponentUpdate-nextProps-nextState" class="headerlink" title="2) shouldComponentUpdate(nextProps, nextState)"></a>2) shouldComponentUpdate(nextProps, nextState)</h4><h5 id="返回布尔值（决定是否需要更新组件）"><a href="#返回布尔值（决定是否需要更新组件）" class="headerlink" title="返回布尔值（决定是否需要更新组件）"></a>返回布尔值（决定是否需要更新组件）</h5><h5 id="输入参数-nextProps-和上面的-componentWillReceiveProps-函数一样，nextState-表示组件即将更新的状态值。这个函数的返回值决定是否需要更新组件，如果-true-表示需要更新，继续走后面的更新流程。否者，则不更新，直接进入等待状态。"><a href="#输入参数-nextProps-和上面的-componentWillReceiveProps-函数一样，nextState-表示组件即将更新的状态值。这个函数的返回值决定是否需要更新组件，如果-true-表示需要更新，继续走后面的更新流程。否者，则不更新，直接进入等待状态。" class="headerlink" title="输入参数 nextProps 和上面的 componentWillReceiveProps 函数一样，nextState 表示组件即将更新的状态值。这个函数的返回值决定是否需要更新组件，如果 true 表示需要更新，继续走后面的更新流程。否者，则不更新，直接进入等待状态。"></a>输入参数 nextProps 和上面的 componentWillReceiveProps 函数一样，nextState 表示组件即将更新的状态值。这个函数的返回值决定是否需要更新组件，如果 true 表示需要更新，继续走后面的更新流程。否者，则不更新，直接进入等待状态。</h5><h5 id="默认情况下，这个函数永远返回-true-用来保证数据变化的时候-UI-能够同步更新。在大型项目中，你可以自己重载这个函数，通过检查变化前后属性和状态，来决定-UI-是否需要更新，能有效提高应用性能。"><a href="#默认情况下，这个函数永远返回-true-用来保证数据变化的时候-UI-能够同步更新。在大型项目中，你可以自己重载这个函数，通过检查变化前后属性和状态，来决定-UI-是否需要更新，能有效提高应用性能。" class="headerlink" title="默认情况下，这个函数永远返回 true 用来保证数据变化的时候 UI 能够同步更新。在大型项目中，你可以自己重载这个函数，通过检查变化前后属性和状态，来决定 UI 是否需要更新，能有效提高应用性能。"></a>默认情况下，这个函数永远返回 true 用来保证数据变化的时候 UI 能够同步更新。在大型项目中，你可以自己重载这个函数，通过检查变化前后属性和状态，来决定 UI 是否需要更新，能有效提高应用性能。</h5><h4 id="3-componentWillUpdate-nextProps-nextState"><a href="#3-componentWillUpdate-nextProps-nextState" class="headerlink" title="3) componentWillUpdate(nextProps, nextState)"></a>3) componentWillUpdate(nextProps, nextState)</h4><h5 id="shouldComponentUpdate返回true或者调用forceUpdate之后，就会开始准更新组件，并调用-componentWillUpdate-。"><a href="#shouldComponentUpdate返回true或者调用forceUpdate之后，就会开始准更新组件，并调用-componentWillUpdate-。" class="headerlink" title="shouldComponentUpdate返回true或者调用forceUpdate之后，就会开始准更新组件，并调用 componentWillUpdate()。"></a>shouldComponentUpdate返回true或者调用forceUpdate之后，就会开始准更新组件，并调用 componentWillUpdate()。</h5><h5 id="输入参数与-shouldComponentUpdate-一样，在这个回调中，可以做一些在更新界面之前要做的事情。需要特别注意的是，在这个函数里面，你就不能使用-this-setState-来修改状态。这个函数调用之后，就会把-nextProps-和-nextState-分别设置到-this-props-和-this-state-中。紧接着这个函数，就会调用-render-来更新界面了。"><a href="#输入参数与-shouldComponentUpdate-一样，在这个回调中，可以做一些在更新界面之前要做的事情。需要特别注意的是，在这个函数里面，你就不能使用-this-setState-来修改状态。这个函数调用之后，就会把-nextProps-和-nextState-分别设置到-this-props-和-this-state-中。紧接着这个函数，就会调用-render-来更新界面了。" class="headerlink" title="输入参数与 shouldComponentUpdate 一样，在这个回调中，可以做一些在更新界面之前要做的事情。需要特别注意的是，在这个函数里面，你就不能使用 this.setState 来修改状态。这个函数调用之后，就会把 nextProps 和 nextState 分别设置到 this.props 和 this.state 中。紧接着这个函数，就会调用 render() 来更新界面了。"></a>输入参数与 shouldComponentUpdate 一样，在这个回调中，可以做一些在更新界面之前要做的事情。需要特别注意的是，在这个函数里面，你就不能使用 this.setState 来修改状态。这个函数调用之后，就会把 nextProps 和 nextState 分别设置到 this.props 和 this.state 中。紧接着这个函数，就会调用 render() 来更新界面了。</h5><p>==绝对不要在componentWillUpdate和componentDidUpdate中调用this.setState方法，否则将导致无限循环调用。!!!==</p>
-<h4 id="4-render"><a href="#4-render" class="headerlink" title="4) render()"></a>4) render()</h4><h5 id="再确定需要更新组件时，调用render，根据diff算法，渲染界面，生成需要更新的虚拟DOM数据。"><a href="#再确定需要更新组件时，调用render，根据diff算法，渲染界面，生成需要更新的虚拟DOM数据。" class="headerlink" title="再确定需要更新组件时，调用render，根据diff算法，渲染界面，生成需要更新的虚拟DOM数据。"></a>再确定需要更新组件时，调用render，根据diff算法，渲染界面，生成需要更新的虚拟DOM数据。</h5><h4 id="5-componentDidUpdate"><a href="#5-componentDidUpdate" class="headerlink" title="5) componentDidUpdate()"></a>5) componentDidUpdate()</h4><h5 id="虚拟DOM同步到DOM中后，执行该方法，可以在这个方法中做DOM操作。"><a href="#虚拟DOM同步到DOM中后，执行该方法，可以在这个方法中做DOM操作。" class="headerlink" title="虚拟DOM同步到DOM中后，执行该方法，可以在这个方法中做DOM操作。"></a>虚拟DOM同步到DOM中后，执行该方法，可以在这个方法中做DOM操作。</h5><h5 id="除了首次render之后调用componentDidMount，其它render结束之后都是调用componentDidUpdate。"><a href="#除了首次render之后调用componentDidMount，其它render结束之后都是调用componentDidUpdate。" class="headerlink" title="除了首次render之后调用componentDidMount，其它render结束之后都是调用componentDidUpdate。"></a>除了首次render之后调用componentDidMount，其它render结束之后都是调用componentDidUpdate。</h5><p>==绝对不要在componentWillUpdate和componentDidUpdate中调用this.setState方法，否则将导致无限循环调用。!!!==</p>
-<h3 id="4-销毁阶段"><a href="#4-销毁阶段" class="headerlink" title="4. 销毁阶段"></a>4. 销毁阶段</h3><h5 id="该阶段主要发生组件销亡的时候，触发componentWillUnmount。当组件需要从DOM中移除的时候，通常需要做一些取消事件绑定，移除虚拟DOM中对应的组件数据结构，销毁一些无效的定时器等工作，都可以在这个方法中处理。"><a href="#该阶段主要发生组件销亡的时候，触发componentWillUnmount。当组件需要从DOM中移除的时候，通常需要做一些取消事件绑定，移除虚拟DOM中对应的组件数据结构，销毁一些无效的定时器等工作，都可以在这个方法中处理。" class="headerlink" title="该阶段主要发生组件销亡的时候，触发componentWillUnmount。当组件需要从DOM中移除的时候，通常需要做一些取消事件绑定，移除虚拟DOM中对应的组件数据结构，销毁一些无效的定时器等工作，都可以在这个方法中处理。"></a>该阶段主要发生组件销亡的时候，触发componentWillUnmount。当组件需要从DOM中移除的时候，通常需要做一些取消事件绑定，移除虚拟DOM中对应的组件数据结构，销毁一些无效的定时器等工作，都可以在这个方法中处理。</h5><h4 id="componentWillUnmount"><a href="#componentWillUnmount" class="headerlink" title="componentWillUnmount()"></a>componentWillUnmount()</h4><h5 id="当组件要被从界面上移除的时候，就会调用-componentWillUnmount。"><a href="#当组件要被从界面上移除的时候，就会调用-componentWillUnmount。" class="headerlink" title="当组件要被从界面上移除的时候，就会调用 componentWillUnmount。"></a>当组件要被从界面上移除的时候，就会调用 componentWillUnmount。</h5><h5 id="在这个函数中，可以做一些组件相关的清理工作，例如取消计时器、网络请求等。"><a href="#在这个函数中，可以做一些组件相关的清理工作，例如取消计时器、网络请求等。" class="headerlink" title="在这个函数中，可以做一些组件相关的清理工作，例如取消计时器、网络请求等。"></a>在这个函数中，可以做一些组件相关的清理工作，例如取消计时器、网络请求等。</h5><h2 id="组件更新时机"><a href="#组件更新时机" class="headerlink" title="组件更新时机"></a>组件更新时机</h2><h4 id="更新组件（重新渲染界面）的方式有以下四种："><a href="#更新组件（重新渲染界面）的方式有以下四种：" class="headerlink" title="更新组件（重新渲染界面）的方式有以下四种："></a>更新组件（重新渲染界面）的方式有以下四种：</h4><ul>
-<li>首次渲染Initial Render，即首次加载组件</li>
-<li>调用this.setState，状态发生改变（并不是一次setState会触发一次render，React可能会合并操作，再一次性进行render）</li>
-<li>父组件发生更新（一般就是props发生改变，但是就算props没有改变或者父子组件之间没有数据交换也会触发render）</li>
-<li>调用this.forceUpdate，强制更新</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>生命周期</th>
-<th style="text-align:center">调用次数</th>
-<th style="text-align:center">能否使用 setSate()</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>defaultProps / getDefaultProps</td>
-<td style="text-align:center">1(全局调用一次)</td>
-<td style="text-align:center">否</td>
-</tr>
-<tr>
-<td>constructor / getInitialState</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">否</td>
-</tr>
-<tr>
-<td>componentWillMount</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">是</td>
-</tr>
-<tr>
-<td>render</td>
-<td style="text-align:center">&gt;=1</td>
-<td style="text-align:center">否</td>
-</tr>
-<tr>
-<td>componentDidMount</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">是</td>
-</tr>
-<tr>
-<td>componentWillReceiveProps</td>
-<td style="text-align:center">&gt;=0</td>
-<td style="text-align:center">是</td>
-</tr>
-<tr>
-<td>shouldComponentUpdate</td>
-<td style="text-align:center">&gt;=0</td>
-<td style="text-align:center">否</td>
-</tr>
-<tr>
-<td>componentWillUpdate</td>
-<td style="text-align:center">&gt;=0</td>
-<td style="text-align:center">否</td>
-</tr>
-<tr>
-<td>componentDidUpdate</td>
-<td style="text-align:center">&gt;=0</td>
-<td style="text-align:center">否</td>
-</tr>
-<tr>
-<td>componentWillUnmount</td>
-<td style="text-align:center">1</td>
-<td style="text-align:center">否</td>
-</tr>
-</tbody>
-</table>
-<h4 id="tips：webStorm添加RN提示插件"><a href="#tips：webStorm添加RN提示插件" class="headerlink" title="tips：webStorm添加RN提示插件"></a>tips：webStorm添加RN提示插件</h4><ol>
-<li><p>进入你想存储这个文件的目录，按住shift+鼠标右键，选择“在此处打开命令窗口”</p>
-</li>
-<li><p>在命令窗口中输入  git clone <a href="https://github.com/virtoolswebplayer/ReactNative-LiveTemplate" target="_blank" rel="noopener">https://github.com/virtoolswebplayer/ReactNative-LiveTemplate</a></p>
-</li>
-<li><p>打开webstorm， 选择file–&gt;Import Settings…–&gt;在刚刚下载的文件夹里找到ReactNative.jar选择它–&gt;OK</p>
-</li>
-<li><p>提示重启webstrom，重启，搞定</p>
-</li>
-</ol>
-<h5 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h5><p>#</p>
-
+        <h1 id="主题：组件的生命周期"><a href="#主题：组件的生命周期" class="headerlink" title="主题：组件的生命周期"></a>主题：组件的生命周期</h1><h2 id="RN组件的props和state"><a href="#RN组件的props和state" class="headerlink" title="RN组件的props和state"></a>RN组件的props和state</h2><h3 id="1-属性（props）"><a href="#1-属性（props）" class="headerlink" title="1.属性（props）"></a>1.属性（props）</h3><h6 id="它是组件的不可变属性（组件自己不可以自己修改props）。"><a href="#它是组件的不可变属性（组件自己不可以自己修改props）。" class="headerlink" title="它是组件的不可变属性（组件自己不可以自己修改props）。"></a>它是组件的不可变属性（组件自己不可以自己修改props）。</h6><h6 id="组件自身定义了一组props作为对外提供的接口，展示一个组件时只需要指定props作为节点的属性。"><a href="#组件自身定义了一组props作为对外提供的接口，展示一个组件时只需要指定props作为节点的属性。" class="headerlink" title="组件自身定义了一组props作为对外提供的接口，展示一个组件时只需要指定props作为节点的属性。"></a>组件自身定义了一组props作为对外提供的接口，展示一个组件时只需要指定props作为节点的属性。</h6><h6 id="一般组件很少需要对外公开方法（例外：工具类的静态方法等），唯一的交互途径就是props。所以说它也是父组件与子组件通信的桥梁。"><a href="#一般组件很少需要对外公开方法（例外：工具类的静态方法等），唯一的交互途径就是props。所以说它也是父组件与子组件通信的桥梁。" class="headerlink" title="一般组件很少需要对外公开方法（例外：工具类的静态方法等），唯一的交互途径就是props。所以说它也是父组件与子组件通信的桥梁。"></a>一般组件很少需要对外公开方法（例外：工具类的静态方法等），唯一的交互途径就是props。所以说它也是父组件与子组件通信的桥梁。</h6><h6 id="组件自己不可以自己修改props（即：props可认为是只读的），只可由其他组件调用它时在外部修改。"><a href="#组件自己不可以自己修改props（即：props可认为是只读的），只可由其他组件调用它时在外部修改。" class="headerlink" title="组件自己不可以自己修改props（即：props可认为是只读的），只可由其他组件调用它时在外部修改。"></a>组件自己不可以自己修改props（即：props可认为是只读的），只可由其他组件调用它时在外部修改。</h6><h3 id="2-状态（state）"><a href="#2-状态（state）" class="headerlink" title="2.状态（state）"></a>2.状态（state）</h3><h6 id="它是组件的内部状态属性，主要用来存储组件自身需要的数据。"><a href="#它是组件的内部状态属性，主要用来存储组件自身需要的数据。" class="headerlink" title="它是组件的内部状态属性，主要用来存储组件自身需要的数据。"></a>它是组件的内部状态属性，主要用来存储组件自身需要的数据。</h6><h6 id="除了初始化时可能由props来决定，之后就完全由组件自身去维护。"><a href="#除了初始化时可能由props来决定，之后就完全由组件自身去维护。" class="headerlink" title="除了初始化时可能由props来决定，之后就完全由组件自身去维护。"></a>除了初始化时可能由props来决定，之后就完全由组件自身去维护。</h6><h6 id="组件中由系统定义了setState方法，每次调用setState时都会更新组件的状态，触发render方法重新渲染界面。"><a href="#组件中由系统定义了setState方法，每次调用setState时都会更新组件的状态，触发render方法重新渲染界面。" class="headerlink" title="组件中由系统定义了setState方法，每次调用setState时都会更新组件的状态，触发render方法重新渲染界面。"></a>组件中由系统定义了setState方法，每次调用setState时都会更新组件的状态，触发render方法重新渲染界面。</h6><h6 id="需要注意的是render方法是被异步调用的，这可以保证同步的多个setState方法只会触发一次render，这样做是有利于提高性能的。"><a href="#需要注意的是render方法是被异步调用的，这可以保证同步的多个setState方法只会触发一次render，这样做是有利于提高性能的。" class="headerlink" title="需要注意的是render方法是被异步调用的，这可以保证同步的多个setState方法只会触发一次render，这样做是有利于提高性能的。"></a>需要注意的是render方法是被异步调用的，这可以保证同步的多个setState方法只会触发一次render，这样做是有利于提高性能的。</h6>
+        
+          <a class="article-more-a" href="/2018/07/31/ReactNative分享/#more">more >></a>
+        
       
 
       
@@ -520,27 +429,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="/www.baidu.com" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+              <a href="/搭建中" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
             </li>
           
         </ul>
