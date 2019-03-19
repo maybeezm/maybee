@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://maybeezm.github.io">
-  <title>Archives: 2018/8 | MayBee的博客</title>
+  <title>App内购支付测试知识汇总 | MayBee的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="小花小花小花">
+  <meta name="description" content="iOS App内购一、测试账户生成1、添加沙盒测试员 在App Store Connect中选择 Users and Access打开页面后在sandbox 下点击Testers，点击添加按钮（+），输入测试信息然后点击邀请  不要在正式环境（production）使用测试的Apple ID账户，否则测试账户将变成无效或不能使用 2、获取测试版本 1.测试人员登录相应的AppleID邮箱收取验证码">
 <meta name="keywords" content="iOS,python,html5,css,js,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MayBee的博客">
-<meta property="og:url" content="https://maybeezm.github.io/archives/2018/08/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="App内购支付测试知识汇总">
+<meta property="og:url" content="https://maybeezm.github.io/2019/03/19/平台支付测试知识汇总/index.html">
 <meta property="og:site_name" content="MayBee的博客">
-<meta property="og:description" content="小花小花小花">
+<meta property="og:description" content="iOS App内购一、测试账户生成1、添加沙盒测试员 在App Store Connect中选择 Users and Access打开页面后在sandbox 下点击Testers，点击添加按钮（+），输入测试信息然后点击邀请  不要在正式环境（production）使用测试的Apple ID账户，否则测试账户将变成无效或不能使用 2、获取测试版本 1.测试人员登录相应的AppleID邮箱收取验证码">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-19T09:32:25.876Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MayBee的博客">
-<meta name="twitter:description" content="小花小花小花">
+<meta name="twitter:title" content="App内购支付测试知识汇总">
+<meta name="twitter:description" content="iOS App内购一、测试账户生成1、添加沙盒测试员 在App Store Connect中选择 Users and Access打开页面后在sandbox 下点击Testers，点击添加按钮（+），输入测试信息然后点击邀请  不要在正式环境（production）使用测试的Apple ID账户，否则测试账户将变成无效或不能使用 2、获取测试版本 1.测试人员登录相应的AppleID邮箱收取验证码">
   
     <link rel="alternative" href="/atom.xml" title="MayBee的博客" type="application/atom+xml">
   
@@ -158,49 +159,281 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-平台支付测试知识汇总" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/08/02/iOS大纲梳理/" class="archive-article-date">
-  	<time datetime="2018-08-02T02:57:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-02</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/08/02/iOS大纲梳理/">iOS大纲梳理</a>
+    <h1 class="article-title" itemprop="name">
+      App内购支付测试知识汇总
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2019/03/19/平台支付测试知识汇总/" class="archive-article-date">
+  	<time datetime="2019-03-19T09:31:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-19</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="iOS-App内购"><a href="#iOS-App内购" class="headerlink" title="iOS App内购"></a>iOS App内购</h1><h2 id="一、测试账户生成"><a href="#一、测试账户生成" class="headerlink" title="一、测试账户生成"></a>一、测试账户生成</h2><h3 id="1、添加沙盒测试员"><a href="#1、添加沙盒测试员" class="headerlink" title="1、添加沙盒测试员"></a>1、添加沙盒测试员</h3><blockquote>
+<p>在App Store Connect中选择 Users and Access打开页面后在sandbox 下点击Testers，点击添加按钮（+），输入测试信息然后点击邀请</p>
+</blockquote>
+<p>不要在正式环境（production）使用测试的Apple ID账户，否则测试账户将变成无效或不能使用</p>
+<h3 id="2、获取测试版本"><a href="#2、获取测试版本" class="headerlink" title="2、获取测试版本"></a>2、获取测试版本</h3><blockquote>
+<p>1.测试人员登录相应的AppleID邮箱收取验证码（具有时效）<br>2.测试机下载并安装TestFight APP<br>3.测试机iTunes &amp; App Store登录测试AppleID<br>4.打开TestFight点击Redeem输入邀请码即可获取相应的测试版本</p>
+</blockquote>
+<h2 id="二、测试自动续订项目"><a href="#二、测试自动续订项目" class="headerlink" title="二、测试自动续订项目"></a>二、测试自动续订项目</h2><blockquote>
+<p>测试续订的时候，沙盒模式时限会缩短，每次安装最多仅能续订6次</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><strong>实际时间</strong></th>
+<th style="text-align:left"><strong>测试时间</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1周</td>
+<td style="text-align:left">3mins</td>
+</tr>
+<tr>
+<td style="text-align:left">1个月</td>
+<td style="text-align:left">5mins</td>
+</tr>
+<tr>
+<td style="text-align:left">2个月</td>
+<td style="text-align:left">10mins</td>
+</tr>
+<tr>
+<td style="text-align:left">3个月</td>
+<td style="text-align:left">15mins</td>
+</tr>
+<tr>
+<td style="text-align:left">6个月</td>
+<td style="text-align:left">30mins</td>
+</tr>
+<tr>
+<td style="text-align:left">1年</td>
+<td style="text-align:left">1小时</td>
+</tr>
+</tbody>
+</table>
+<h2 id="三、内购商品类型"><a href="#三、内购商品类型" class="headerlink" title="三、内购商品类型"></a>三、内购商品类型</h2><blockquote>
+<p>项目分类详见：<a href="https://www.jianshu.com/p/23c36919d6e1" target="_blank" rel="noopener">IAP购买项目类型</a></p>
+</blockquote>
+<h2 id="四、其他问题"><a href="#四、其他问题" class="headerlink" title="四、其他问题"></a>四、其他问题</h2><h3 id="1、沙盒环境自动续费是一定会自动续费的吗？"><a href="#1、沙盒环境自动续费是一定会自动续费的吗？" class="headerlink" title="1、沙盒环境自动续费是一定会自动续费的吗？"></a>1、沙盒环境自动续费是一定会自动续费的吗？</h3><blockquote>
+<p>不一定，有时候会，有时候不会，每次安装最多仅能续订6次</p>
+</blockquote>
+<p>测试本公司项目时，在使用产品过程出现过订阅期到订阅失效时状态切换出现产品crash。一般会有短时间的失效时间，一周对相应几秒，一年对应几分钟。产品订阅状态一般在APP页面刷新，重启APP或后台热启动时获取</p>
+<h3 id="2、恢复订阅，Restore"><a href="#2、恢复订阅，Restore" class="headerlink" title="2、恢复订阅，Restore"></a>2、恢复订阅，Restore</h3><blockquote>
+<p>登录已订阅购买项目的AppleID，在订阅期，升级，重新安装APP后，点击Restore则会获取当前用户的订阅状态，恢复既有状态</p>
+</blockquote>
+<p>但有时候需要视需求而定，看订阅是跟着User ID还是AppleID，通常是跟Apple ID，如果需要跟User ID， 需要自家服务器支持。</p>
+<h3 id="3、订阅归属问题"><a href="#3、订阅归属问题" class="headerlink" title="3、订阅归属问题"></a>3、订阅归属问题</h3><blockquote>
+<p>1.跟着AppleID走，用户在设备A行登录账户10001购买一项服务，在设备B上登录账户10001也可以享受此项服务<br>2.跟着useID走，不管用户是哪个AppleID购买，但是只能我一个APP的唯一用户可以享受服务。这时候需要APP自身做处理了，就是记住首次购买的transaction-id,并且绑定了用户。以后自动续费的话，就会有original-transaction-id，这个ID是第一次购买的transaction-id，根据这个服务可以联系初始购买服务</p>
+</blockquote>
+<h3 id="4-同一个AppleID在订阅期内可以再次点击购买吗？"><a href="#4-同一个AppleID在订阅期内可以再次点击购买吗？" class="headerlink" title="4.同一个AppleID在订阅期内可以再次点击购买吗？"></a>4.同一个AppleID在订阅期内可以再次点击购买吗？</h3><blockquote>
+<p>不可以，苹果自身会拦截，会出现您目前已订阅此项目的提示窗，但是在sandbox模式，在对应时间内Apple会拦截，过了这个时间则不会拦截</p>
+</blockquote>
+<h3 id="5-购买自动订阅3个月，可以换购1年或1个月的吗？"><a href="#5-购买自动订阅3个月，可以换购1年或1个月的吗？" class="headerlink" title="5.购买自动订阅3个月，可以换购1年或1个月的吗？"></a>5.购买自动订阅3个月，可以换购1年或1个月的吗？</h3><blockquote>
+<p>可以，苹果文档上有提到，视为升级套餐或降级订阅套餐<br>注：若是发布项目，则可以参考<a href="https://help.apple.com/app-store-connect/#/dev79c1985e0" target="_blank" rel="noopener">APP Store Connect</a></p>
+</blockquote>
+<h3 id="6-包含三天免费试用订阅的测试"><a href="#6-包含三天免费试用订阅的测试" class="headerlink" title="6.包含三天免费试用订阅的测试"></a>6.包含三天免费试用订阅的测试</h3><blockquote>
+<p>沙盒模式下会将这个时间直接忽略掉，即测试环境是不满足条件的</p>
+</blockquote>
+<h3 id="7-订阅购买时系统时间问题"><a href="#7-订阅购买时系统时间问题" class="headerlink" title="7.订阅购买时系统时间问题"></a>7.订阅购买时系统时间问题</h3><blockquote>
+<p>订阅时，需保证手机系统时间与当前实际时间一致。否则会导致订阅周期的错乱，前端表现为订阅期内订阅功能未解锁，订阅入口未隐藏等，点击订阅又显示为已订阅状态</p>
+</blockquote>
+<h1 id="Android-App内购"><a href="#Android-App内购" class="headerlink" title="Android App内购"></a>Android App内购</h1><h2 id="一、测试账户生成-1"><a href="#一、测试账户生成-1" class="headerlink" title="一、测试账户生成"></a>一、测试账户生成</h2><h3 id="1、添加沙盒测试员-1"><a href="#1、添加沙盒测试员-1" class="headerlink" title="1、添加沙盒测试员"></a>1、添加沙盒测试员</h3><blockquote>
+<p>在Google Play Console中点选APP选择 Settings打开页面后在点击 ，点击CREATE LIST，输入测试账户信息然后点击CREATE LIST<br>在App releases中选择 Ciosed track中Alpha条目后的manage添加或者CREATE LIS新添加账户<br>谷歌审核通过后会生成相应的测试账户激活链接</p>
+</blockquote>
+<p>不要在正式环境（production）使用测试的谷歌账户，否则测试账户将变成无效或不能使用</p>
+<h3 id="2、激活测试账户"><a href="#2、激活测试账户" class="headerlink" title="2、激活测试账户"></a>2、激活测试账户</h3><blockquote>
+<p>1.方法一：为保证测试环境的干净，需要用户清除谷歌商店，谷歌服务缓存（设置，其他应用），删除手机上其他的谷歌账户（设置，其他账户…..），若登录的只有测试账户则不如要此步骤。打开手机自带浏览器，若登录谷歌账户则需先退出，清除数据历史，重新输入<a href="https://mail.google.com" target="_blank" rel="noopener">https://mail.google.com</a>登录测试账户邮箱，然后输入测试链接，会跳转到APP测试计划页面，用户点击加入测试计划即可<br>2.方法二：激活账户的方法就是在谷歌浏览器上登录测试谷歌邮箱，然后输入测试链接，跳转到APP测试计划页面，用户点击加入测试计划，也同样可以激活账户</p>
+</blockquote>
+<h3 id="3-获取测试版本"><a href="#3-获取测试版本" class="headerlink" title="3.获取测试版本"></a>3.获取测试版本</h3><blockquote>
+<p>1.测试机，打开设置，选择其他应用，清除谷歌商店，谷歌服务缓存，删除谷歌账户，重新添加谷歌账户，登录测试账户<br>2.打开谷歌商店，点击我的应用和游戏，就可以下载测试APP</p>
+</blockquote>
+<h2 id="二、测试自动续订项目-1"><a href="#二、测试自动续订项目-1" class="headerlink" title="二、测试自动续订项目"></a>二、测试自动续订项目</h2><blockquote>
+<p>测试续订的时候，沙盒模式时限会缩短，每天最多仅能续订6次<br>| <strong>实际时间</strong> | <strong>测试时间</strong> |<br>|:—-|<br>| 1周 | 5mins   |<br>| 1个月 | 5mins |<br>| 6个月 | 15mins   |<br>| 1年 | 30mins   |</p>
+</blockquote>
+<p>注：以上时间是根据公司项目现存的几种订阅时间类型获取到的测试时间数据，谷歌支付在跳出订阅确认面时会有具体测试时间说明</p>
+<h2 id="三、内购商品类型-1"><a href="#三、内购商品类型-1" class="headerlink" title="三、内购商品类型"></a>三、内购商品类型</h2><blockquote>
+<p>分为订阅商品和受管理商品，受管理商品又分为消耗性商品和非消耗性商品</p>
+</blockquote>
+<h2 id="四、其他问题-1"><a href="#四、其他问题-1" class="headerlink" title="四、其他问题"></a>四、其他问题</h2><h3 id="1、沙盒环境自动续费是一定会自动续费的吗？-1"><a href="#1、沙盒环境自动续费是一定会自动续费的吗？-1" class="headerlink" title="1、沙盒环境自动续费是一定会自动续费的吗？"></a>1、沙盒环境自动续费是一定会自动续费的吗？</h3><blockquote>
+<p>会，一直续订，除非取消</p>
+</blockquote>
+<h3 id="2、订阅如何取消"><a href="#2、订阅如何取消" class="headerlink" title="2、订阅如何取消"></a>2、订阅如何取消</h3><blockquote>
+<p>打开谷歌商店，点击我的订阅，取消则会在下一个续订周期前生效</p>
+</blockquote>
+<p><strong>注：</strong>用户如果取消订阅，然后在订阅有效期内再次购买该订阅。此时，google play视其为订阅的激活，用户不会被扣款，但会生成新的票据，扣款在下次订阅周期开始时扣款。</p>
+<h3 id="3、恢复订阅，Restore"><a href="#3、恢复订阅，Restore" class="headerlink" title="3、恢复订阅，Restore"></a>3、恢复订阅，Restore</h3><blockquote>
+<p>登录已订阅购买项目的usedID，在订阅期，升级，重新安装APP后，点击Restore则会获取当前用户的订阅状态，恢复既有状态</p>
+</blockquote>
+<p>但有时候需要试需求而定，看订阅是跟着userID还是谷歌账户</p>
+<h3 id="4、订阅归属问题"><a href="#4、订阅归属问题" class="headerlink" title="4、订阅归属问题"></a>4、订阅归属问题</h3><blockquote>
+<p>1.跟着谷歌账户走，用户在设备A行登录账户10001购买一项服务，在设备B上登录账户10001也可以享受此项服务<br>2.跟着useID走，不管用户是哪个谷歌账户购买，但是只能我一个APP的唯一用户可以享受服务。这时候需要APP自身做处理了，就是记住首次购买的transaction-id,并且绑定了用户。以后自动续费的话，就会有original-transaction-id，这个ID是第一次购买的transaction-id，根据这个服务可以联系初始购买服务<br>插曲：有产品（归属于谷歌账户）用户反映，同账户订阅期内，用户切换设备无法继续订阅状态。这个是因为APP获取到用户谷歌支付状态需要反应一段时间，多重启几次或者在使用过程中一段时间即可获得对应的订阅状态</p>
+</blockquote>
+<h3 id="5、同一个谷歌账户，在订阅期内可以再次点击购买吗？"><a href="#5、同一个谷歌账户，在订阅期内可以再次点击购买吗？" class="headerlink" title="5、同一个谷歌账户，在订阅期内可以再次点击购买吗？"></a>5、同一个谷歌账户，在订阅期内可以再次点击购买吗？</h3><blockquote>
+<p>可以，对于相同购买事件，时间累计或者升级或降级</p>
+</blockquote>
+<h3 id="6、购买自动订阅3个月，可以换购1年或1个月的吗？"><a href="#6、购买自动订阅3个月，可以换购1年或1个月的吗？" class="headerlink" title="6、购买自动订阅3个月，可以换购1年或1个月的吗？"></a>6、购买自动订阅3个月，可以换购1年或1个月的吗？</h3><blockquote>
+<p>可以，谷歌文档上有提到，视为升级套餐或降级订阅套餐<br>注：若是发布项目，则可以参考<a href="https://blog.csdn.net/long1216/article/details/80985211" target="_blank" rel="noopener">Google play </a><a href="https://blog.csdn.net/long1216/article/details/80985211" target="_blank" rel="noopener"> </a> <a href="https://blog.csdn.net/long1216/article/details/80985211" target="_blank" rel="noopener">console</a><br><a href="https://developer.android.com/google/play/billing/billing_testing" target="_blank" rel="noopener">官方文档</a></p>
+</blockquote>
+<h3 id="7、包含三天免费试用订阅的测试"><a href="#7、包含三天免费试用订阅的测试" class="headerlink" title="7、包含三天免费试用订阅的测试"></a>7、包含三天免费试用订阅的测试</h3><blockquote>
+<p>沙盒模式下会将这个时间直接忽略掉，即测试环境是不满足条件的</p>
+</blockquote>
+<h2 id="五、题外"><a href="#五、题外" class="headerlink" title="五、题外"></a>五、题外</h2><blockquote>
+<p>对于满足谷歌支付测试的手机ROM还需要刷成国际版（不方便刷自己手机，所以还未实践），再安装谷歌一系列APP <a href="http://www.goplaycn.com" target="_blank" rel="noopener">http://www.goplaycn.com</a> 方可进行</p>
+</blockquote>
+<h2 id="六、参考链接"><a href="#六、参考链接" class="headerlink" title="六、参考链接"></a>六、参考链接</h2><blockquote>
+<p><a href="https://www.jianshu.com/p/0b0664910f41" target="_blank" rel="noopener">https://www.jianshu.com/p/0b0664910f41</a></p>
+</blockquote>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/zfbShou.jpeg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wxShou.jpeg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://maybeezm.github.io/2019/03/19/平台支付测试知识汇总/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/09/14/外观模式/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">外观模式</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -223,8 +456,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
